@@ -1,11 +1,11 @@
 meta {
-  name: Editer une équipe
+  name: Supprimer une équipe
   type: http
   seq: 5
 }
 
-put {
-  url: {{api_url}}teams/1/edit-team
+delete {
+  url: {{api_url}}teams/5/delete
   body: none
   auth: inherit
 }

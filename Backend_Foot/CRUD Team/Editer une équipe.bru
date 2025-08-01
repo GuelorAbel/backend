@@ -1,0 +1,21 @@
+meta {
+  name: Editer une équipe
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{api_url}}teams/8/edit-team
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Bétis Séville"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

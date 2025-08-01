@@ -1,5 +1,7 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from 'src/prisma.service';
+import { CreateTeamDto } from './dto/create-team.dto';
+import { updateTeamDto } from './dto/update-team.dto';
 
 @Injectable()
 export class TeamsService {
@@ -24,7 +26,7 @@ export class TeamsService {
      }
 
      // méthode qui crée une nouvelle équipe
-     async createTeam(data) {
+     async createTeam(data: CreateTeamDto) {
           // const teamExists = await this.prisma.team.findUnique({
           //      where: { name: data.name },
           // });
@@ -40,7 +42,7 @@ export class TeamsService {
      }
 
      // méthode qui met à jour une équipe
-     async updateTeam(id: number, data) {
+     async updateTeam(id: number, data: updateTeamDto) {
           const teamExists = await this.prisma.team.findUnique({
                where: { id },
           });
