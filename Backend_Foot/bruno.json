@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "BACKEND_FOOT",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

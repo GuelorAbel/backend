@@ -1,0 +1,27 @@
+meta {
+  name: Ajouter une équipe
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{api_url}}teams/add-team
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Inter Milan",
+    "country": "Italie"
+  }
+}
+
+body:form-urlencoded {
+  name: Inter Milan
+  country: Italie
+}
+
+settings {
+  encodeUrl: true
+}

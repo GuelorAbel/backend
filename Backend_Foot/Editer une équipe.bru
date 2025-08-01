@@ -1,0 +1,15 @@
+meta {
+  name: Editer une équipe
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{api_url}}teams/1/edit-team
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

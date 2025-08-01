@@ -1,0 +1,15 @@
+meta {
+  name: Supprimer une équipe
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{api_url}}teams/5/delete
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
