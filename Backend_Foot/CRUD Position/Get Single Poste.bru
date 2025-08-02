@@ -1,0 +1,15 @@
+meta {
+  name: Get Single Poste
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{api_url}}postes/3
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

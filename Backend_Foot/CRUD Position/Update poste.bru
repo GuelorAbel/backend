@@ -1,0 +1,21 @@
+meta {
+  name: Update poste
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{api_url}}postes/2/edit-poste
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Défenseur central"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
