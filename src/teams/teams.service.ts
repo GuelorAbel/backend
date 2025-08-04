@@ -27,14 +27,6 @@ export class TeamsService {
 
      // méthode qui crée une nouvelle équipe
      async createTeam(data: CreateTeamDto) {
-          // const teamExists = await this.prisma.team.findUnique({
-          //      where: { name: data.name },
-          // });
-
-          // // si l'équipe existe déjà, on renvoie une erreur
-          // if (teamExists) {
-          //      throw new BadRequestException("Une équipe avec ce nom existe déjà.");
-          // }
           return this.prisma.team.create({
                data,
           });
